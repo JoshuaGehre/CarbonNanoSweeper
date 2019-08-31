@@ -5,14 +5,21 @@ It is part of the Minesveeper series on [heptaveegesimal.com](http://heptaveeges
 
 ## Controls
 
-** Left Click ** Dig a tile
-** Right Click ** Place a flag
-** W, A, S, D ** Rotate or move the carbon nanotube
-** Q, E ** Look to the side
-** 1, 2 ** Change color scheeme
-** 3, 4, 5, 6 ** Change textures
-** Enter ** Restart
-** Esc ** Quit
+**Left Click** Dig a tile
+
+**Right Click** Place a flag
+
+**W, A, S, D** Rotate or move the carbon nanotube
+
+**Q, E** Look to the side
+
+**1, 2** Change color scheeme
+
+**3, 4, 5, 6** Change textures
+
+**Enter** Restart
+
+**Esc** Quit
 
 ## Compiling
 
