@@ -111,7 +111,7 @@ void main()
   }
 
   if(distanceEstimator(pos) < 0.5){
-    float d = min(1,max(0, min(1, 1.5 - length(pos - camVectors.Position.xyz) / 30)));
+    float d = max(0, min(1, 1.5 - length(pos - camVectors.Position.xyz) / 30));
     vec3 center = getClosestCenter(pos);
     vec3 nrm = normalize(pos - center);
     float b = 0.25 + 0.75 * max(0, dot(-dir, nrm));
