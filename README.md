@@ -3,6 +3,8 @@
 CarbonNanoSweeper is a game similar to Minesweeper but it's played on a carbon nanotube.
 It is part of the Minesveeper series on [heptaveegesimal.com](https://heptaveegesimal.com/).
 
+This branch is a backup of the initial Visual Studio Project.
+
 ## Controls
 
 **Left Click**
