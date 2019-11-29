@@ -31,10 +31,8 @@ Quit
 
 ## Compiling
 
-This project is a Visual Studio Solution.
-Compile this in Debug or Release x86, this project does not compile using x64!
-
-If you only want to run the compiled .exe just place the resources folder, conatining the shaders and textures, currently located at CarbonNanoSweeper/resources, in the same directory as the .exe!
+I'm trying to get this to run outside of Windows, but this branch is not yet functional.
+Switch to the branch vs-project to get the Visual Studio Project.
 
 ## Libraries
 
