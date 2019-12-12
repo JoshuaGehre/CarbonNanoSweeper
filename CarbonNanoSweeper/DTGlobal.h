@@ -21,4 +21,4 @@
 #define UBOB_HIGHLIGHT 3
 #define UBOB_COLORS 4
 
-#endif;
+#endif

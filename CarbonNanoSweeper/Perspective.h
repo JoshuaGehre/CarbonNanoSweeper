@@ -21,4 +21,4 @@ public:
 	inline float tanFovY_2() { return tan(0.5f * _fovY); };
 };
 
-#endif;
+#endif

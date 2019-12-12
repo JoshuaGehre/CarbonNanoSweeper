@@ -64,9 +64,9 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 	glfwGetCursorPos(window, &cursorX, &cursorY);
 	int width, height;
 	glfwGetFramebufferSize(window, &width, &height);
-	float x = cursorX / width;
-	float y = cursorY / height;
-	float ratio = width / (float)height;
+	//float x = cursorX / width;
+	//float y = cursorY / height;
+	//float ratio = width / (float)height;
 	if (action == 0) {
 		int hex = Camera::C->findCentralHexagon();
 		if(hex >= 0){

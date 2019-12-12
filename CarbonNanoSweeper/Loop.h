@@ -28,4 +28,4 @@ public:
 	static Loop * L;
 };
 
-#endif;
+#endif

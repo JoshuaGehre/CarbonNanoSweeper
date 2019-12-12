@@ -58,4 +58,4 @@ public:
 	static CNS * Game;
 };
 
-#endif;
+#endif
