@@ -1,13 +1,3 @@
 # Ignore files created when compiling
-Release/*
-Debug/*
-CarbonNanoSweeper/Release/*
-CarbonNanoSweeper/Debug/*
-# Doesn't properly compile but even if fixed
-# should not be part of a commit
-x64/*
-CarbonNanoSweeper/x64/*
-
-# Don't keep track of which files are opened in the project
-.vs/*
-CarbonNanoSweeper/.vs/*
+CarbonNanoSweeper/CarbonNanoSweeper
+CarbonNanoSweeper/*.o
