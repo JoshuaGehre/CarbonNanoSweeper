@@ -28,29 +28,34 @@ HEADERS = $(STB_HEADERS) $(CNS_HEADERS)
 
 OBJECTS = Main.o Camera.o CNS.o Keys.o Loop.o Perspective.o RenderData.o Texture.o
 
+.PHONY: clean
+
 all: $(OBJECTS) 
 	$(CPP) -o CarbonNanoSweeper $(OBJECTS) $(LIBS)
 
 Main.o: Main.cpp $(HEADERS)
-	$(CPP) $(CPP_OPTS) -c $< $(HEADERS) -o $@ $(INCLUDES)
+	$(CPP) $(CPP_OPTS) -c $< -o $@ $(INCLUDES)
 
 Camera.o: Camera.cpp $(HEADERS)
-	$(CPP) $(CPP_OPTS) -c $< $(HEADERS) -o $@ $(INCLUDES)
+	$(CPP) $(CPP_OPTS) -c $< -o $@ $(INCLUDES)
 
 CNS.o: CNS.cpp $(HEADERS)
-	$(CPP) $(CPP_OPTS) -c $< $(HEADERS) -o $@ $(INCLUDES)
+	$(CPP) $(CPP_OPTS) -c $< -o $@ $(INCLUDES)
 
 Keys.o: Keys.cpp $(HEADERS)
-	$(CPP) $(CPP_OPTS) -c $< $(HEADERS) -o $@ $(INCLUDES)
+	$(CPP) $(CPP_OPTS) -c $< -o $@ $(INCLUDES)
 
 Loop.o: Loop.cpp $(HEADERS)
-	$(CPP) $(CPP_OPTS) -c $< $(HEADERS) -o $@ $(INCLUDES)
+	$(CPP) $(CPP_OPTS) -c $< -o $@ $(INCLUDES)
 
 Perspective.o: Perspective.cpp $(HEADERS)
-	$(CPP) $(CPP_OPTS) -c $< $(HEADERS) -o $@ $(INCLUDES)
+	$(CPP) $(CPP_OPTS) -c $< -o $@ $(INCLUDES)
 
 RenderData.o: RenderData.cpp $(HEADERS)
-	$(CPP) $(CPP_OPTS) -c $< $(HEADERS) -o $@ $(INCLUDES)
+	$(CPP) $(CPP_OPTS) -c $< -o $@ $(INCLUDES)
 
 Texture.o: Texture.cpp $(HEADERS)
-	$(CPP) $(CPP_OPTS) -c $< $(HEADERS) -o $@ $(INCLUDES)
+	$(CPP) $(CPP_OPTS) -c $< -o $@ $(INCLUDES)
+
+clean:
+	rm $(OBJECTS)
