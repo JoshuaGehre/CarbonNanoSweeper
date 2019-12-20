@@ -1,11 +1,7 @@
-# Not yet functional
-
-
+# You might have to adjust the following line based on your operating system
 LIBS = -L./GLFW/lib-linux-x86_64/
 
 INCLUDES = -I./GLFW/include/ -I./libs/
-# -I/usr/include/G.L/
-# -I./glad/include
 
 CPP=g++
 CPP_OPTS=-Wall -Wextra --std=c++11 -O2 -g

@@ -31,7 +31,7 @@ Quit
 
 ## Compiling
 
-Run the make file to compile CarbonNanoSweeper, you might have to change what version of the GLFW Library is used based on your operating system. If you instead want CarbonNanoSweeper as a Visual Studio Project, switch to the branch *vs_project*.
+Run the make file to compile CarbonNanoSweeper, you might have to change what version of the GLFW Library is used based on your operating system. If you instead want CarbonNanoSweeper as a Visual Studio Project, switch to the branch *vs-project*.
 
 ## Libraries
 
