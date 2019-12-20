@@ -1,7 +1,8 @@
 #ifndef JG_LOOP_H
 #define JG_LOOP_H
 
-#include <glad/glad.h>
+//#include <glad/glad.h>
+#define GL_GLEXT_PROTOTYPES
 #include <GLFW/glfw3.h>
 
 // Maybe split into seperate loops for rendering and physics later

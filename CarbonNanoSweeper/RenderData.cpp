@@ -1,6 +1,9 @@
 #include "RenderData.h"
-#include <glad/glad.h>
+
+//#include <glad/glad.h>
+#define GL_GLEXT_PROTOTYPES
 #include <GLFW/glfw3.h>
+
 #include <iostream>
 #include <fstream>
 #include <vector>

@@ -1,8 +1,11 @@
 #include "Texture.h"
-#include <glad/glad.h>
+
+//#include <glad/glad.h>
+#define GL_GLEXT_PROTOTYPES
 #include <GLFW/glfw3.h>
+
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb/stb_image.h"
+#include <stb/stb_image.h>
 #include "RenderData.h"
 #include <iostream>
 

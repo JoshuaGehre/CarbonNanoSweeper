@@ -31,8 +31,7 @@ Quit
 
 ## Compiling
 
-I'm trying to get this to run outside of Windows, but this branch is not yet functional.
-Switch to the branch vs-project to get the Visual Studio Project.
+Run the make file to compile CarbonNanoSweeper, you might have to change what version of the GLFW Library is used based on your operating system. If you instead want CarbonNanoSweeper as a Visual Studio Project, switch to the branch *vs_project*.
 
 ## Libraries
 

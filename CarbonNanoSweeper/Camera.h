@@ -1,8 +1,10 @@
 #ifndef JG_CAMERA_H
 #define JG_CAMERA_H
 
-#include "glm/gtc/type_ptr.hpp"
-#include <glad/glad.h>
+#include <glm/gtc/type_ptr.hpp>
+
+//#include <glad/glad.h>
+#define GL_GLEXT_PROTOTYPES
 #include <GLFW/glfw3.h>
 
 class Camera {

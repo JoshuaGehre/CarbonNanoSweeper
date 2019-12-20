@@ -4,7 +4,7 @@
 #include "DTGlobal.h"
 #include <string>
 #include "Texture.h"
-#include "glm/gtc/type_ptr.hpp"
+#include <glm/gtc/type_ptr.hpp>
 
 class GLFWcursor;
 

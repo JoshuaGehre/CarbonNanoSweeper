@@ -3,12 +3,15 @@
 #include <math.h>
 #include <iostream>
 #include <string>
-#include <glad/glad.h>
+
+//#include <glad/glad.h>
+#define GL_GLEXT_PROTOTYPES
 #include <GLFW/glfw3.h>
-#include "glm/gtc/matrix_transform.hpp"
-#include "glm/gtc/matrix_inverse.hpp"
-#include "glm/gtx/transform.hpp"
-#include "glm/gtc/type_ptr.hpp"
+
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/matrix_inverse.hpp>
+#include <glm/gtx/transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 #include "DTGlobal.h"
 #include "RenderData.h"
@@ -124,9 +127,9 @@ int main()
 	/* Make the window's context current */
 	glfwMakeContextCurrent(window);
 
-	if (!gladLoadGL(wrap_getprocaddress, NULL)) {
+	/*if (!gladLoadGL(wrap_getprocaddress, NULL)) {
 		return -1;
-	}
+	}*/
 
 	glfwSwapInterval(1);
 

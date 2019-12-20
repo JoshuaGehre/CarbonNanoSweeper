@@ -1,7 +1,7 @@
 #ifndef JG_PERSPECTIVE_H
 #define JG_PERSPECTIVE_H
 
-#include "glm/gtc/type_ptr.hpp"
+#include <glm/gtc/type_ptr.hpp>
 
 class Perspective {
 protected:
