@@ -28,8 +28,7 @@ HEADERS = $(STB_HEADERS) $(CNS_HEADERS)
 
 OBJECTS = Main.o Camera.o CNS.o Keys.o Loop.o Perspective.o RenderData.o Texture.o
 
-GLFW_OPT = -lglfw3
-# -lGLU -lGL
+GLFW_OPT = -lGL -lGLU -lglfw3 -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor
 
 .PHONY: clean
 
