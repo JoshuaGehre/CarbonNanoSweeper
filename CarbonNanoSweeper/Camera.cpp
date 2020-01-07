@@ -200,6 +200,11 @@ float bondDistanceEstimator(glm::vec3 p)
 	return std::max(0.0f, std::min(dAlt, (float)std::max(length(c) - 0.5, glm::length(glm::vec2(c.y, c.z)) - 0.15)));
 }
 
+// abs() seems to be broken on some machines
+// No Idea how this happens
+// Implement abs_fixed() here as a workaround
+inline float abs_fixed(float a) { return (a > 0) ? a : -a; }
+
 int Camera::findCentralHexagon()
 {
 	float screenRatio;
@@ -222,9 +227,13 @@ int Camera::findCentralHexagon()
 	float c = camPos.y * a + camPos.z * b;
 
 	bool flipYZ = false;
+	
+	//std::cout << "\n" << a << " " << b;
 
-	if (abs(a) < 0.001) {
-		if (abs(b) < 0.001) {
+	if (abs_fixed(a) < 0.001) {
+		if (abs_fixed(b) < 0.001) {
+			//std::cout << " " << abs_fixed(a) << " " << abs_fixed(b);
+			//std::cout << " ----";
 			return - 1;
 		}
 		else {

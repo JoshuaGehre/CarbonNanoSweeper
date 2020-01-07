@@ -157,6 +157,8 @@ int main()
 	delete Camera::C;
 
 	// End
+	// Causes a memory access violation on some machines
+	//...
 	glfwTerminate();
 
 	return 0;
