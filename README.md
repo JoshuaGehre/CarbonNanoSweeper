@@ -32,10 +32,13 @@ Quit
 ## Compiling
 
 Under Ubuntu based Distros the following packages are required for compiling CarbonNanoSweeper:
+
 sudo apt-get install -y g++ freeglut3 freeglut3-dev libxmu-dev libxmu-headers libxi-dev libxrandr-dev libxcursor-dev libxinerama-dev libglfw3-dev
 
 Run the make file within the CarbonNanoSweeper subdirectory to compile this.
 You will then be able to run CarbonNanoSweeper as long as it is within the same directory as the resources directory.
+
+To install CarbonNanoSweeper you can run the Install.sh script.
 
 If you instead want CarbonNanoSweeper as a Visual Studio Project, switch to the branch *vs-project*.
 However, that branch is not up to date and has sometimes shown issues with compiling.

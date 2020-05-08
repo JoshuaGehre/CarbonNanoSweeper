@@ -1,3 +1,10 @@
 # Ignore files created when compiling
 CarbonNanoSweeper/CarbonNanoSweeper
 CarbonNanoSweeper/*.o
+
+# Temporary files while installing
+# These should get deleted, however
+# ignore them if they someone
+# don't get removed
+CarbonNanoSweeper/CarbonNanoSweeper.sh
+CarbonNanoSweeper/carbon-nano-sweeper.desktop
