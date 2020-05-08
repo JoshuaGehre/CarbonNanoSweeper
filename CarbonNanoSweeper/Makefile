@@ -1,7 +1,5 @@
 # You might have to adjust the following line based on your operating system
-LIBS = -L./GLFW/lib-linux-x86_64/
-
-INCLUDES = -I./GLFW/include/ -I./libs/
+INCLUDES = -I./libs/
 
 CPP=g++
 CPP_OPTS=-Wall -Wextra --std=c++11 -O2 -g
@@ -10,12 +8,12 @@ HEADERS = Camera.h CNS.h DTGlobal.h Keys.h Loop.h Perspective.h RenderData.h Tex
 
 OBJECTS = Main.o Camera.o CNS.o Keys.o Loop.o Perspective.o RenderData.o Texture.o
 
-GLFW_OPT = -lGL -lGLU -lglfw3 -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor
+GLFW_OPT = -lGL -lGLU -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor -lglfw
 
 .PHONY: clean
 
 all: $(OBJECTS) 
-	$(CPP) $(CPP_OPTS) -o CarbonNanoSweeper $(OBJECTS) $(LIBS) $(GLFW_OPT) 
+	$(CPP) $(CPP_OPTS) -o CarbonNanoSweeper $(OBJECTS) $(GLFW_OPT) 
 
 Main.o: Main.cpp $(HEADERS)
 	$(CPP) $(CPP_OPTS) -c $< $(GLFW_OPT) -o $@ $(INCLUDES)
