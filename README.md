@@ -40,6 +40,8 @@ You will then be able to run CarbonNanoSweeper as long as it is within the same 
 
 To install CarbonNanoSweeper you can run the Install.sh script.
 
+If you wish to uninstall CarbonNanoSweeper for some reason, you can use the Uninstall.sh script. This will get rid of the files created by Install.sh.
+
 If you instead want CarbonNanoSweeper as a Visual Studio Project, switch to the branch *vs-project*.
 However, that branch is not up to date and has sometimes shown issues with compiling.
 
