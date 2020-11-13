@@ -24,6 +24,7 @@ using namespace std;
 
 void error_callback(int error, const char* description)
 {
+	(void) error;
 	cout << description << endl;
 }
 
@@ -63,6 +64,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 {
+	(void) mods;
 	double cursorX, cursorY;
 	glfwGetCursorPos(window, &cursorX, &cursorY);
 	int width, height;
@@ -83,20 +85,16 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 	}
 }
 
-void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
-{
-}
-
 void resize_callback(GLFWwindow* window, int width, int height) {
+	(void) window;
 	cout << "Height: " << height << "\tWidth: " << width << endl;
 }
 
-static void *
-wrap_getprocaddress(const char *name, void *user_ptr)
+/*static void * wrap_getprocaddress(const char *name, void *user_ptr)
 {
 	(void)user_ptr;
 	return (void*)glfwGetProcAddress(name);
-}
+}*/
 
 //Main function
 int main()
@@ -138,8 +136,6 @@ int main()
 	glfwSetFramebufferSizeCallback(window, resize_callback);
 
 	glfwSetMouseButtonCallback(window, mouse_button_callback);
-
-	glfwSetScrollCallback(window, scroll_callback);
 
 	// Creates Shaders
 	RenderData::init();

@@ -16,6 +16,8 @@ private:
 	// Set time before loopEvent and determine how
 	// much time has passed during the last loopEvent
 	double time;
+	double timeLast;
+	int frameCount;
 public:
 	Loop(GLFWwindow * W);
 	virtual ~Loop();

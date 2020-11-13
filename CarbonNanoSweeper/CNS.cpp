@@ -210,6 +210,7 @@ void CNS::leftClick(int i)
 	case GAMESTATE_CLOSED:
 		generateGame(i);
 		gameState = GAMESTATE_PLAYING;
+		// fallthrough
 	case GAMESTATE_PLAYING:
 		dig(i);
 		setTileUBO();

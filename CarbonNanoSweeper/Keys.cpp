@@ -33,9 +33,7 @@ bool Keys::addKey(int k)
 		bindings = new int[1];
 		bindings[0] = k;
 		length = 1;
-		return true;
-	}
-	else {
+	} else {
 		int i;
 		for (i = 0; i < length; i++) {
 			// Exit if key was allready added
@@ -52,6 +50,7 @@ bool Keys::addKey(int k)
 		bindings = H;
 		length++;
 	}
+	return true;
 }
 
 bool Keys::removeKey(int k)
@@ -140,6 +139,8 @@ bool Keys::get(int i)
 
 void Keys::onCallback(int key, int scancode, int action, int mods)
 {
+	(void) scancode;
+	(void) mods;
 	// Exit if keys have not yet been initialized
 	if (A == NULL) {
 		std::cout << "Keys have not been intialized or been destroyed!\n\tIgnoring input!\n";

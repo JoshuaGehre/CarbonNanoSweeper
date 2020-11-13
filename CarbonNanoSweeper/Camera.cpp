@@ -54,10 +54,8 @@ void Camera::readCursorNoMovement()
 
 void Camera::updateFirstPersonCamera(float dt)
 {
-	double cX, cY, dX, dY;
+	double cX, cY;
 	glfwGetCursorPos(window, &cX, &cY);
-	dX = cX - cursorX;
-	dY = cY - cursorY;
 	// Change Angles
 	if (Keys::get(KEY_LOOK_LEFT)) { 
 		phi += dt * 90; 

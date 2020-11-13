@@ -12,8 +12,11 @@ using namespace std;
 Loop * Loop::L = NULL;
 
 Loop::Loop(GLFWwindow * W) :
+	window(W),
 	shouldRun(true),
-	window(W)
+	time(0),
+	timeLast(0),
+	frameCount(0)
 {
 }
 
@@ -59,10 +62,14 @@ void Loop::doLoop()
 void Loop::loopEvent(float dt)
 {
 	// Update Title (Test to show time to render)
-	/*if (floor(time * 5) > floor((time - dt) * 5)) {
-		string title = "CarbonNanoSweeper " + std::to_string(1000 * dt) + "ms";
+	/*if (floor(time) > floor(time - dt)) {
+		string title = "CarbonNanoSweeper " + std::to_string((time - timeLast) / frameCount * 1000.0) + "ms";
 		glfwSetWindowTitle(window, title.c_str());
-	}*/
+		timeLast = time;
+		frameCount = 0;
+	}
+	frameCount++;
+	*/
 	if (CNS::Game->newName) {
 		CNS::Game->newName = false;
 		glfwSetWindowTitle(window, ("CarbonNanoSweeper   " + CNS::Game->title).c_str());

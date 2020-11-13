@@ -121,7 +121,7 @@ float Texture::getRatio()
 
 void Texture::setPixel(unsigned int x, unsigned int y, unsigned char r, unsigned char g, unsigned char b, unsigned char a)
 {
-	if ((x >= width) || (y >= height)) return;
+	if ((x >= (unsigned int) width) || (y >= (unsigned int) height)) return;
 	int pos = x + y * width;
 	pos *= channels;
 	pixels[pos] = r;

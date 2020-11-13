@@ -58,9 +58,7 @@ float distanceEstimator(vec3 p)
   for(int j = mirrorCount - 1; j >= 0; j--){
     vec3 md = p - mirrors[j][0];
     float l = dot(md, mirrors[j][1]);
-    if(l < 0){
-      p -= 2 * l * mirrors[j][1];
-    }
+    p += (l < 0 ? -2 * l : 0) * mirrors[j][1];
   }
   return max(0, length(p - vec3(0.5, 0, radius)) - 0.25);
 }

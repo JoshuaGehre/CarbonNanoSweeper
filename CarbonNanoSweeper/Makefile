@@ -1,4 +1,3 @@
-# You might have to adjust the following line based on your operating system
 INCLUDES = -I./libs/
 
 CPP=g++
