@@ -21,7 +21,7 @@ end-of-file
 cat > carbon-nano-sweeper.desktop <<end-of-file
 [Desktop Entry]
 Encoding=UTF-8
-Name=Carbonnanosweeper
+Name=CarbonNanoSweeper
 Comment=Find mines on a Carbonnanotube
 Exec=$CNSDIR/CarbonNanoSweeper.sh
 Icon=$CNSDIR/CNS256.png
