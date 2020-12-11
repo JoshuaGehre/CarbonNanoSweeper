@@ -20,4 +20,13 @@ pushd /usr/share/applications > /dev/null
 	fi
 popd > /dev/null
 
+pushd /usr/bin > /dev/null
+	if [ -L carbon-nano-sweeper ]
+	then
+		sudo rm carbon-nano-sweeper
+	else
+		echo "CarbonNanoSweeper symbolic link not set!"
+	fi
+popd > /dev/null
+
 echo "CarbonNanoSweeper uninstalled!"

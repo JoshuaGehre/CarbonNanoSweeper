@@ -37,5 +37,6 @@ sudo cp CarbonNanoSweeper $CNSDIR
 sudo cp CarbonNanoSweeper.sh $CNSDIR
 sudo chmod +x $CNSDIR/CarbonNanoSweeper.sh
 sudo cp carbon-nano-sweeper.desktop /usr/share/applications
+sudo ln -s $CNSDIR/CarbonNanoSweeper.sh /usr/bin/carbon-nano-sweeper
 
 rm CarbonNanoSweeper.sh carbon-nano-sweeper.desktop
