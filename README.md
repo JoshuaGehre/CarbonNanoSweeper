@@ -5,29 +5,16 @@ It is part of the Minesveeper series on [heptaveegesimal.com](https://heptaveege
 
 ## Controls
 
-**Left Click**
-Dig a tile
-
-**Right Click**
-Place a flag
-
-**W, A, S, D**
-Rotate or move the carbon nanotube
-
-**Q, E**
-Look to the side
-
-**1, 2**
-Change color scheeme
-
-**3, 4, 5, 6**
-Change textures
-
-**Enter**
-Restart
-
-**Esc**
-Quit
+| Button | Functionality |
+|:-----|:------|
+| Left Click | Dig a tile |
+| Right Click | Place a flag |
+| W, A, S, D | Rotate or move the carbon nanotube |
+| Q, E | Look to the side |
+| 1, 2 | Change color scheeme |
+| 3, 4, 5, 6 | Change textures |
+| Enter | Restart |
+| Esc | Quit |
 
 ## Compiling
 
@@ -48,5 +35,6 @@ However, that branch is not up to date and has sometimes shown issues with compi
 ## Libraries
 
 This project additionaly uses the following libraries:
+
 - [Glm](https://glm.g-truc.net)
 - [Stb](http://nothings.org/)
